@@ -1,7 +1,7 @@
 import {useState} from 'react';
 //look at activity 16 for example of email validation, etc. 
 // import validation functions from utils file
-import {validateEmail, handleBlur} from '../../utils/validate';
+import {validateEmail, handleBlur} from '../utils/validate.js';
 
 function ContactForm(props) {
     const [name, setName] = useState('');
