@@ -1,4 +1,11 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-<Header title="About Me" />
+export default function AboutMe() {
+    return (
+        <>
+            <Header title="About Me" />
+            <Footer />
+        </>
+    );
+}
