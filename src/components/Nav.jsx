@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
+//Look at activity 22, because readme says to use conditional rendering
+//REDO USING CONDITIONAL RENDERING
 //Looking at activity 24 for example
 export default function Nav() {
     return (

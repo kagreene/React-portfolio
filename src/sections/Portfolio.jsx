@@ -1,3 +1,11 @@
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-<Header title="Portfolio" />
+export default function Portfolio() {
+    return (
+        <>
+            <Header title="Portfolio" />
+            <Footer />
+        </>
+    );
+}
