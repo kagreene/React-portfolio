@@ -1,4 +1,4 @@
-import contactForm from './ContactForm';
+import contactForm from './ContactForm.jsx';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
