@@ -1,7 +1,7 @@
 import {useState} from 'react';
 //look at activity 16 for example of email validation, etc. 
 // import validation functions from utils file
-import {validateEmail, handleBlur} from '../utils/validate.js';
+import {validateEmail, handleBlur} from '../../utils/validate.js';
 
 function ContactForm(props) {
     const [name, setName] = useState('');
@@ -24,6 +24,10 @@ const handleInputChange = (e) => {
         setMessage(inputValue);
     }
 };
+const handleBlurEvent = (field, value) => {
+    const error = handleBlur(field, value);
+    setErrorMessage(error);
+};
 
 const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -40,6 +44,7 @@ const handleFormSubmit = (e) => {
     setName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
 };
 
 //Notify user that a field is required if the cursor moves out of one of the form fields without entering text. This will be handled in the return function. 
@@ -47,42 +52,58 @@ const handleFormSubmit = (e) => {
 //use onBlur to validate the field when the cursor moves out of the field
 
 return (
-    <form onSubmit={handleFormSubmit}>
-        <div>
-            <label>Name:</label>
+    <form onSubmit={handleFormSubmit} className="bg-light p-4 rounded shadow">
+        <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+                Name
+            </label>
             <input
                 type="text"
+                name="name"
+                id="name"
+                className="form-control"
                 value={name}
                 onChange={handleInputChange}
-                onBlur={() => handleBlur(name)}
-                placeholder = 'Name'
+                onBlur={() => handleBlurEvent('name', name)}
+                placeholder="Enter your name"
             />
         </div>
-        <div>
-            <label>Email:</label>
+        <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+                Email
+            </label>
             <input
                 type="email"
+                name="email"
+                id="email"
+                className="form-control"
                 value={email}
                 onChange={handleInputChange}
-                onBlur={() => handleBlur(email)}
-                placeholder = 'Email'
+                onBlur={() => handleBlurEvent('email', email)}
+                placeholder="Enter your email"
             />
         </div>
-        <div>
-            <label>Message:</label>
+        <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+                Message
+            </label>
             <textarea
-                type = 'text'
+                name="message"
+                id="message"
+                className="form-control"
+                rows="5"
                 value={message}
                 onChange={handleInputChange}
-                onBlur={() => handleBlur(message)}
-                placeholder = 'Message'
+                onBlur={() => handleBlurEvent('message', message)}
+                placeholder="Enter your message"
             ></textarea>
         </div>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        <button type="submit">Submit</button>
+        {errorMessage && <p className="text-danger">{errorMessage}</p>}
+        <button type="submit" className="btn btn-primary w-100">
+            Submit
+        </button>
     </form>
 );
-
 }
 
 export default ContactForm;

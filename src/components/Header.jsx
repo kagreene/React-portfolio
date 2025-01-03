@@ -1,12 +1,12 @@
 import React from 'react';
-import Nav from './Nav';
 
-export default function Header({ title}) {
+export default function Header({ title }) {
     return (
-        <header className='header'>
-            <Nav />
-            <div className="header-content">
-                <h1>{title}</h1>
+        <header className="bg-dark text-white py-4">
+            <div className="container">
+                <div className="text-center mt-3">
+                    <h1 className="display-4">{title}</h1>
+                </div>
             </div>
         </header>
     );
