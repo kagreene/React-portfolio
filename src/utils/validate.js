@@ -4,11 +4,13 @@ export function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-export function handleBlur(field){
+export function handleBlur(field, value){
     // if (!field) or if (!field.value)??
-    if (!field) {
-        setErrorMessage('This field is required');
-    } else {
-        setErrorMessage('');
+    if (!value) {
+        return 'This field is required';
     }
+    if (field === 'email' && value && !validateEmail(value)) {
+       return 'Invalid email address'
+    }
+    return ''; //if no error
 }

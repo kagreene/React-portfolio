@@ -1,19 +1,17 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Links
+[Deployed]()
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Github](https://github.com/kagreene/React-portfolio)
 
 TO DO: 
--pull in contact form in contact file
--update app file
+
 -add third profile link
--finish adding projects (need 2 more)
--add resume to download
+-finish adding projects (need 2 more) (switch images to gifs for undeployed apps?)
+-Replace resume download with updated resume
 -write actual readme
--routing?? (make sure that browser URL is updated when page changes)
 -add info to about me 
 -update color scheme to use something other than bootstrap defaults
+-contact and portfolio sections displaying a little weird (like they are on mobile all the time)
+
