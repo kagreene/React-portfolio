@@ -44,7 +44,8 @@ export default function Portfolio() {
         },
         { title: 'Blog Site',
             image: BlogSite,
-            github: ""
+            github: "https://github.com/kagreene/Blog",
+            deployed: "",
 
         }
     ];
