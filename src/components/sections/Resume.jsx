@@ -1,10 +1,8 @@
-import Header from '../Header.jsx';
 import Footer from '../Footer.jsx';
 
 export default function Resume() {
     return (
         <>
-            <Header title="Resume" />
             <div className="container my-5">
                 <div className="row">
                     <div className="text-center mb-4">
