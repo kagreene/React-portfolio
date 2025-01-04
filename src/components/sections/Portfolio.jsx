@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header.jsx';
 import Footer from '../Footer.jsx';
 import Project from '../Project.jsx';
 
@@ -8,6 +7,8 @@ import AnimalRescueSite from '../../assets/RescueSite.jpg';
 import EmployeeTracker from '../../assets/EmployeeTracker.jpg';
 import VehicleBuilder from '../../assets/VehicleBuilder.jpg';
 import ReadmeGenerator from '../../assets/ReadmeGenerator.jpg';
+import WeatherDashboard from '../../assets/WeatherDashboard.jpg';
+import BlogSite from '../../assets/Blog.jpg';
 
 export default function Portfolio() {
     const projects = [
@@ -35,11 +36,21 @@ export default function Portfolio() {
             github: "https://github.com/kagreene/Readme-generator",
             deployed: "https://github.com/kagreene/Readme-generator",
         },
+        {
+            title: "Weather Dashboard",
+            image: WeatherDashboard,
+            github: "https://github.com/kagreene/Weather-Dashboard",
+            deployed: "",
+        },
+        { title: 'Blog Site',
+            image: BlogSite,
+            github: ""
+
+        }
     ];
 
     return (
         <>
-            <Header title="Portfolio" />
             <div className="container mt-4">
                 <div className="row">
                     {projects.map((project, index) => (

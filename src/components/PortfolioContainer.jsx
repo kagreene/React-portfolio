@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import Nav from './Nav';
+import Header from './Header';
 import AboutMe from './sections/AboutMe';
 import Contact from './sections/Contact';
 import Portfolio from './sections/Portfolio';
@@ -25,8 +25,12 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+            <Header
+                name="Kristen Greene" 
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+            />
+            <main className="container my-4">{renderPage()}</main>
         </div>
     );
 }

@@ -25,7 +25,7 @@ export default function Footer() {
                         <FaLinkedin size={30} />
                     </a>
                     <a
-                        href="https://twitter.com/your-twitter-username"
+                        href="https://twitter.com/greene_kristen"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white"
