@@ -9,6 +9,7 @@ This application uses React to build a single page developer portfolio. Using Re
 [Github](https://github.com/kagreene/React-portfolio)
 
 TO DO: 
+-added name to header, added email and phone number to contact section
 
 -make blog github repository and add link in portfolio section
 
