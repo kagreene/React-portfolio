@@ -3,6 +3,28 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --bs-primary: #344e41;
+  --bs-secondary:#a3b18a;
+  --bs-success: #588157;
+  --bs-danger: #936639;
+  --bs-warning: #7f4f24;
+  --bs-info: #b6ad90;
+  --bs-light: #DAD7CD;
+  --bs-dark: #582f0e;
+  --bs-body-color: #344e41;
+  --bs-body-bg: #DAD7CD;
+  --bs-link-color: #b6ad90;
+  --bs-link-hover-color: #582f0e;
+  --bs-link-hover-decoration: underline;
+  --bs-link-focus-color: #582f0e;
+  --bs-link-focus-decoration: underline;
+  --bs-link-disabled-color: #936639;
+  --bs-link-disabled-decoration: none;
+  --bs-heading-color: #dad7cd;
+  --bg-dark: #344e41;
+  --bs-dark-rgb: 52, 78, 65;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-btn-bg: #344e41;
 }
 
 .logo {
