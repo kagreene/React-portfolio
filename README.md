@@ -6,7 +6,9 @@ This application uses React to build a single page developer portfolio. Using Re
 
 ## Links
 
-[Deployed]()
+[Deployed](https://kristengreene.netlify.app/)
+
+![Screenshot of deployed app](./src/assets/deployed.jpg) 
 
 [Github](https://github.com/kagreene/React-portfolio)
 
