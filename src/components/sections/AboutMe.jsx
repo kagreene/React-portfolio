@@ -4,7 +4,7 @@ import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 export default function AboutMe() {
     return (
         <>
-            <div className="container my-5">
+            <div className="container-fluid my-5">
                 <div className="row align-items-center">
                     <div className="col-md-4 text-center">
                         <img

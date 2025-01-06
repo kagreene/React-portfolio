@@ -4,7 +4,7 @@ import Footer from '../Footer.jsx';
 export default function Contact() {
     return (
         <>
-            <div className='container my-5'>
+            <div className='container-fluid my-5'>
                 <div className="row justify-content-center">
                     <div className="col-md-8">
                         <ContactForm />

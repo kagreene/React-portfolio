@@ -30,7 +30,8 @@ export default function PortfolioContainer() {
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
-            <main className="container my-4">{renderPage()}</main>
+            <main className="container-fluid">{renderPage()}</main>
         </div>
     );
+    
 }
