@@ -52,7 +52,7 @@ export default function Portfolio() {
 
     return (
         <>
-            <div className="container mt-4">
+            <div className="container-fluid mt-4">
                 <div className="row">
                     {projects.map((project, index) => (
                         <div key={index} className="col-md-6 col-lg-4 mb-4">

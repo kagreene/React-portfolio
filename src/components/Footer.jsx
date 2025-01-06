@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
     return (
         <footer className="bg-dark text-white py-4">
-            <div className="container text-center">
+            <div className="container-fluid text-center">
                 <div className="d-flex justify-content-center gap-4 mb-3">
                     <a
                         href="https://github.com/kagreene"
