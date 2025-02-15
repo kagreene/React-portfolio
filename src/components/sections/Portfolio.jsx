@@ -4,11 +4,14 @@ import Project from '../Project.jsx';
 
 // Image imports
 import AnimalRescueSite from '../../assets/RescueSite.jpg';
-import EmployeeTracker from '../../assets/EmployeeTracker.jpg';
-import VehicleBuilder from '../../assets/VehicleBuilder.jpg';
-import ReadmeGenerator from '../../assets/ReadmeGenerator.jpg';
+//import EmployeeTracker from '../../assets/EmployeeTracker.jpg';
+//import VehicleBuilder from '../../assets/VehicleBuilder.jpg';
+//import ReadmeGenerator from '../../assets/ReadmeGenerator.jpg';
 import WeatherDashboard from '../../assets/WeatherDashboard.jpg';
 import BlogSite from '../../assets/Blog.jpg';
+import CandidateSearch from '../../assets/CandidateSearch.jpg';
+import KanbanBoard from '../../assets/KanbanBoard.jpg';
+import WeatherBlitz from '../../assets/WeatherBlitz.jpg';
 
 export default function Portfolio() {
     const projects = [
@@ -19,22 +22,22 @@ export default function Portfolio() {
             deployed: "https://kagreene.github.io/Rescuers-down-under/",
         },
         {
-            title: "Employee Tracker",
-            image: EmployeeTracker,
-            github: "https://github.com/kagreene/Employee_Tracker",
-            deployed: "https://github.com/kagreene/Employee_Tracker",
+            title: "Candidate Search App",
+            image: CandidateSearch,
+            github: "https://github.com/kagreene/candidate_search  ",
+            deployed: "https://candidate-search-yp0p.onrender.com/ ",
         },
         {
-            title: "Vehicle Builder",
-            image: VehicleBuilder,
-            github: "https://github.com/kagreene/Vehicle-builder",
-            deployed: "https://github.com/kagreene/Vehicle-builder",
+            title: "Kanban Board",
+            image: KanbanBoard,
+            github: "https://github.com/kagreene/kanban",
+            deployed: "https://kanban-7w1m.onrender.com/",
         },
         {
-            title: "Readme Generator",
-            image: ReadmeGenerator,
-            github: "https://github.com/kagreene/Readme-generator",
-            deployed: "https://github.com/kagreene/Readme-generator",
+            title: "Weather Blitz",
+            image: WeatherBlitz,
+            github: "https://github.com/kagreene/bootstacks",
+            deployed: "https://weatherblitz.onrender.com/ ",
         },
         {
             title: "Weather Dashboard",
